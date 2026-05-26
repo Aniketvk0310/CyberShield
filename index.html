@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CyberShield | Interactive Cybersecurity Awareness</title>
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="page-fade">
+  <!-- Loading screen -->
+  <div id="loading-screen" class="loading-screen">
+    <div class="text-center">
+      <div class="spinner mb-3"></div>
+      <div class="text-uppercase" style="letter-spacing: 3px;">Initializing CyberShield</div>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo.svg" alt="CyberShield logo">
+        <span>CyberShield</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Threat Topics</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="pages/about.html">About Cyber Threats</a></li>
+              <li><a class="dropdown-item" href="pages/phishing.html">Phishing Awareness</a></li>
+              <li><a class="dropdown-item" href="pages/password.html">Password Security</a></li>
+              <li><a class="dropdown-item" href="pages/browsing.html">Safe Browsing Tips</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Interactive</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="pages/quiz.html">Cyber Quiz</a></li>
+              <li><a class="dropdown-item" href="pages/3d-lab.html">3D Cyber Lab</a></li>
+              <li><a class="dropdown-item" href="pages/audio.html">Audio Awareness</a></li>
+              <li><a class="dropdown-item" href="pages/gallery.html">Gallery</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="pages/contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container hero-content">
+      <div class="row align-items-center">
+        <div class="col-lg-7" data-aos="fade-right">
+          <span class="badge-soft mb-3"><i class="fa-solid fa-shield-halved"></i> Cyber Awareness Platform</span>
+          <h1 class="hero-title">CyberShield: <span class="gradient-text">Defend the Digital World</span></h1>
+          <p class="hero-subtitle mt-3">Interactive multimedia learning for safe browsing, strong passwords, and phishing defense.</p>
+          <p class="mt-3">Stay ahead with <span id="typing-text" class="typing" data-phrases="Detect threats|Secure devices|Build safer habits"></span></p>
+          <div class="d-flex flex-wrap gap-3 mt-4">
+            <a class="btn btn-glow btn-lg" href="pages/quiz.html">Take the Quiz</a>
+            <a class="btn btn-outline-glow btn-lg" href="pages/3d-lab.html">Enter 3D Lab</a>
+          </div>
+        </div>
+        <div class="col-lg-5 mt-5 mt-lg-0" data-aos="fade-left">
+          <div class="glass p-4 rounded-4">
+            <img src="images/shield.svg" alt="Security shield illustration">
+            <p class="mt-3 text-muted">Explore multimedia content, interactive tools, and 3D visualization built for student presentations.</p>
+          </div>
+        </div>
+      </div>
+      <i class="fa-solid fa-bug float-icon" style="top: 12%; left: 8%;"></i>
+      <i class="fa-solid fa-lock float-icon" style="top: 28%; right: 12%; animation-delay: 1.2s;"></i>
+      <i class="fa-solid fa-wifi float-icon" style="bottom: 20%; left: 18%; animation-delay: 2s;"></i>
+    </div>
+  </header>
+
+  <section class="section-pad">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-lg-8" data-aos="fade-up">
+          <h2 class="section-title">Why CyberShield?</h2>
+          <p class="text-muted">CyberShield combines multimedia storytelling, quizzes, and visual labs to make cybersecurity simple and memorable.</p>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="zoom-in">
+          <div class="glass card-hover p-4 rounded-4 h-100">
+            <i class="fa-solid fa-eye fa-2x text-info"></i>
+            <h5 class="mt-3">Threat Visibility</h5>
+            <p class="text-muted">Learn to identify phishing, malware, and social engineering with real-world examples.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+          <div class="glass card-hover p-4 rounded-4 h-100">
+            <i class="fa-solid fa-key fa-2x text-info"></i>
+            <h5 class="mt-3">Password Defense</h5>
+            <p class="text-muted">Test password strength and build stronger authentication habits.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="glass card-hover p-4 rounded-4 h-100">
+            <i class="fa-solid fa-cube fa-2x text-info"></i>
+            <h5 class="mt-3">3D Cyber Lab</h5>
+            <p class="text-muted">Interact with a 3D shield model to visualize layered security.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-pad" style="background: rgba(12, 18, 32, 0.6);">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-5" data-aos="fade-right">
+          <h2 class="section-title">Cyber Stats That Matter</h2>
+          <p class="text-muted">Animated counters highlight real security pressure points for students and organizations.</p>
+        </div>
+        <div class="col-lg-7">
+          <div class="row g-3 stats-grid">
+            <div class="col-md-4" data-aos="fade-up">
+              <div class="glass stat rounded-4">
+                <div class="counter" data-target="300" data-suffix="M+">0</div>
+                <p class="text-muted">Daily attack attempts</p>
+              </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="glass stat rounded-4">
+                <div class="counter" data-target="91" data-suffix="%">0</div>
+                <p class="text-muted">Breaches from phishing</p>
+              </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="glass stat rounded-4">
+                <div class="counter" data-target="60" data-suffix="%">0</div>
+                <p class="text-muted">SMBs close after attacks</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-pad">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-lg-8" data-aos="fade-up">
+          <h2 class="section-title">Interactive Features</h2>
+          <p class="text-muted">Try the phishing detector, password checker, audio awareness, and quiz modules.</p>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3" data-aos="flip-left">
+          <div class="glass card-hover p-4 rounded-4 h-100">
+            <i class="fa-solid fa-triangle-exclamation fa-2x text-warning"></i>
+            <h6 class="mt-3">Phishing Detector</h6>
+            <p class="text-muted">Analyze suspicious emails for red flags.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="flip-left" data-aos-delay="100">
+          <div class="glass card-hover p-4 rounded-4 h-100">
+            <i class="fa-solid fa-lock fa-2x text-success"></i>
+            <h6 class="mt-3">Password Strength</h6>
+            <p class="text-muted">Check if your password meets strong criteria.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="flip-left" data-aos-delay="200">
+          <div class="glass card-hover p-4 rounded-4 h-100">
+            <i class="fa-solid fa-wave-square fa-2x text-info"></i>
+            <h6 class="mt-3">Audio Awareness</h6>
+            <p class="text-muted">Listen to cyber alert audio with tips.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3" data-aos="flip-left" data-aos-delay="300">
+          <div class="glass card-hover p-4 rounded-4 h-100">
+            <i class="fa-solid fa-clipboard-check fa-2x text-primary"></i>
+            <h6 class="mt-3">Quiz Challenge</h6>
+            <p class="text-muted">Test your security knowledge instantly.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-pad" style="background: rgba(12, 18, 32, 0.6);">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6" data-aos="fade-right">
+          <h2 class="section-title">Gallery Preview</h2>
+          <p class="text-muted">Explore bitmap photos and vector illustrations built for a multimedia presentation.</p>
+          <a class="btn btn-outline-glow" href="pages/gallery.html">Open Full Gallery</a>
+        </div>
+        <div class="col-lg-6" data-aos="fade-left">
+          <div class="row g-3">
+            <div class="col-6 gallery-img"><img src="images/cyber1.png" alt="Cyber lab image" loading="lazy"></div>
+            <div class="col-6 gallery-img"><img src="images/cyber2.png" alt="Security network image" loading="lazy"></div>
+            <div class="col-6 gallery-img"><img src="images/shield.svg" alt="Shield vector" loading="lazy"></div>
+            <div class="col-6 gallery-img"><img src="images/phish.svg" alt="Phishing alert vector" loading="lazy"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer py-4">
+    <div class="container">
+      <div class="row align-items-center g-3">
+        <div class="col-md-4">
+          <div class="d-flex align-items-center gap-2">
+            <img src="images/logo.svg" alt="CyberShield logo" style="width: 32px;">
+            <strong>CyberShield</strong>
+          </div>
+          <small class="text-muted">Interactive cybersecurity awareness website.</small>
+        </div>
+        <div class="col-md-4">
+          <div class="d-flex gap-3 flex-wrap">
+            <a href="pages/about.html">About</a>
+            <a href="pages/quiz.html">Quiz</a>
+            <a href="pages/3d-lab.html">3D Lab</a>
+            <a href="pages/contact.html">Contact</a>
+          </div>
+        </div>
+        <div class="col-md-4 text-md-end social-icons">
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
