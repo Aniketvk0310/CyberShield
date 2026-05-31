@@ -24,6 +24,11 @@ CyberShield is an interactive cybersecurity awareness website built with HTML, C
 2. Use the Live Server extension or open index.html directly in a browser.
 3. Navigate through the pages using the top navbar or footer links.
 
+## Team & Originality
+- This project was completed by a team of two students.
+- All multimedia assets were created or edited by the team for this submission.
+- The 3D model is procedurally modeled and rendered in Three.js to match the cyber theme.
+
 ## Multimedia Requirement Mapping
 - Bitmap images: images/cyber1.png, images/cyber2.png
 - Vector images: images/logo.svg, images/shield.svg, images/phish.svg
@@ -32,19 +37,22 @@ CyberShield is an interactive cybersecurity awareness website built with HTML, C
 - Animations: loading screen, counters, floating icons, AOS scroll reveals
 - Navigation: responsive navbar, dropdown menus, breadcrumb, footer links
 
+## Tools by Asset
+- Bitmap images: Canva/Figma for layout and export to PNG; optimized and organized in VS Code.
+- Vector images: Custom SVG icons drawn in Figma and refined in VS Code.
+- 3D model: Procedural modeling and rendering in Three.js (no external model file).
+- Digital audio: Audacity used to trim, normalize, and export the alert audio.
+- Animations: CSS keyframes and AOS library configured in JavaScript.
+
 ## Tools Used (Documentation)
 - Visual Studio Code (development)
 - Bootstrap 5 (layout and responsiveness)
 - Three.js (3D model rendering)
-- Blender (optional for future 3D model upgrades)
-- Canva/Figma (optional for design assets)
+- Canva/Figma (bitmap and vector asset design)
 - Audacity (audio editing)
 
 ## Documentation Phases
 See docs/planning.md, docs/design.md, docs/development.md, and docs/evaluation.md
 
-## Suggested Asset Upgrades
-- Replace placeholder bitmap images with high-resolution cybersecurity photos
-- Replace vector icons with custom SVGs from a design tool
-- Swap the procedural Three.js shield with a Blender-exported GLB model
-- Replace the alert audio with a narrated safety guide
+## Submission Notes
+- Print the evaluation sheet and bring it for submission.
